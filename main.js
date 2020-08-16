@@ -1,8 +1,6 @@
 const ref = document.referrer;
 const aTags = document.querySelectorAll("a");
 
-console.log(ref);
-
 if(ref !== '') {
     if(ref.includes("instagram")) {
         for(let a of aTags) {
