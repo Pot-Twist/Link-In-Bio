@@ -20,8 +20,13 @@
             <button>Shop</button>
         </a>
         <!-- end links -->
-        
+
     </main>
-    <script src="main.js"></script>
+    <script src="main.swc.js"></script>
+    <script>
+        if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
+            navigator.serviceWorker.register('/sw.js');
+        }
+    </script>
 </body>
 </html>
