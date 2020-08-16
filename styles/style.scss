@@ -1,0 +1,65 @@
+@import "./reset";
+@import "./variables";
+
+* {
+    color: $color_body;
+    background-color: transparent;
+    font-family: $base-font;
+}
+
+main {
+    height: 80%;
+    width: 50%;
+    margin: 5% 25%;
+    background-color: $body-background;
+
+    > * {
+        display: table;
+        line-height: 2.5rem;
+        text-align: center;
+        margin: auto;
+        width: 100%;
+    }
+
+    a {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    img {
+        border-radius: 50%;
+        max-width: 15%;
+        height: auto;
+    }
+}
+
+a button {
+    width: 100%;
+	font-size: 1rem;
+	display: inline-block;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+	background: $color_body;
+	color: $body-background;
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+a button[disabled] {
+	cursor: default;
+	opacity: .5;
+	cursor: not-allowed;
+}
+
+.button:focus,
+.button:hover,
+button:focus,
+button:hover {
+    background: $body-background;
+    border: 1px solid $color_body;
+    color: $color_body;
+}
