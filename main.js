@@ -8,6 +8,8 @@ if (navigator.serviceWorker && !navigator.serviceWorker.controller) {
 const ref = document.referrer;
 const aTags = document.querySelectorAll("a");
 
+console.log(ref);
+
 if(ref.includes("instagram")) {
     for(let a in aTags) {
         a.href = a.href.replace("unknown_social", "instagram");
